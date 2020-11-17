@@ -49,7 +49,7 @@ if(!norunFlag){
 		
 		var re = /x/;
 		re.toString = function() {
-			showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+			showMessage('嘿嘿，你打开了控制台，是想要偷看我的小秘密吗？', 5000);
 			return '';
 		};
 		
@@ -134,7 +134,7 @@ if(!norunFlag){
 				} else if (now > 11 && now <= 14) {
 					text = '中午了，工作了一个上午，现在是午餐时间！';
 				} else if (now > 14 && now <= 17) {
-					text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					text = '午后很容易犯困呢，今天的目标完成了吗？';
 				} else if (now > 17 && now <= 19) {
 					text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
 				} else if (now > 19 && now <= 21) {
@@ -295,7 +295,7 @@ if(!norunFlag){
 					success: function(res) {
 						if(res.code !== 100000){
 							talkValTimer();
-							showMessage('似乎有什么错误，请和站长联系！',0);
+							showMessage('似乎有什么错误，请和博主联系！',0);
 						}else{
 							talkValTimer();
 							showMessage(res.text,0);
