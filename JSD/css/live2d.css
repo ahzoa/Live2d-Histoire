@@ -232,7 +232,11 @@
 .l2d_caihong{
     animation: rainbow 1.5s infinite;
 }
-
+@media (max-width: 860px) {
+    #landlord {
+        display: none!important;
+    }
+}
 
 @keyframes shake {
     2% {
